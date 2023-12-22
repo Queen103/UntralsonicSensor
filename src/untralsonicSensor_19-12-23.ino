@@ -31,6 +31,7 @@ int getDistance(int TRIG_PIN, int ECHO_PIN){
   digitalWrite(TRIG_PIN, LOW);  
  
   const uint32_t duration= endTime - startTime;
+  Serial.println("thoi gian cho: "+(String)duration);
   // Serial.println(duration);
   int distance= duration/29/2;
   return distance;

@@ -18,8 +18,7 @@ int getDistanceTest(int TRIG_PIN, int ECHO_PIN){
   float time = samplingRate/1000;
   Serial.println("thoi gian: "+(String)time);
   // Serial.println("Tốc độ lấy mẫu: " + String(samplingRate) + " mcs");
-  //int distance= samplingRate/29/2;
-  float distance = (samplingRate * (endTime - startTime + 10)) / 2;
-  delay(30);
+  int distance= samplingRate/29/2;
+  // float distance = (samplingRate * (endTime - startTime + 10)) / 2;
   return distance;
 }
